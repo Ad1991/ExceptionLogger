@@ -18,6 +18,8 @@
 		354F1A35203D21540013EDAC /* ExceptionLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354F1A2D203D21540013EDAC /* ExceptionLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		354F1A3D203D21D00013EDAC /* GTMStackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 354F1A3B203D21D00013EDAC /* GTMStackTrace.h */; };
 		354F1A3E203D21D00013EDAC /* GTMStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 354F1A3C203D21D00013EDAC /* GTMStackTrace.m */; };
+		354F1A41203D22660013EDAC /* ELExceptionLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 354F1A3F203D22660013EDAC /* ELExceptionLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		354F1A42203D22660013EDAC /* ELExceptionLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 354F1A40203D22660013EDAC /* ELExceptionLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		354F1A30203D21540013EDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		354F1A3B203D21D00013EDAC /* GTMStackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStackTrace.h; sourceTree = "<group>"; };
 		354F1A3C203D21D00013EDAC /* GTMStackTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStackTrace.m; sourceTree = "<group>"; };
+		354F1A3F203D22660013EDAC /* ELExceptionLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELExceptionLogger.h; sourceTree = "<group>"; };
+		354F1A40203D22660013EDAC /* ELExceptionLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELExceptionLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				354F1A3A203D21D00013EDAC /* GTM */,
 				354F1A2F203D21540013EDAC /* ExceptionLogger.h */,
 				354F1A30203D21540013EDAC /* Info.plist */,
+				354F1A3F203D22660013EDAC /* ELExceptionLogger.h */,
+				354F1A40203D22660013EDAC /* ELExceptionLogger.m */,
 			);
 			path = ExceptionLogger;
 			sourceTree = "<group>";
@@ -141,6 +147,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354F1A41203D22660013EDAC /* ELExceptionLogger.h in Headers */,
 				354F1A3D203D21D00013EDAC /* GTMStackTrace.h in Headers */,
 				354F1A31203D21540013EDAC /* ExceptionLogger.h in Headers */,
 			);
@@ -259,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354F1A42203D22660013EDAC /* ELExceptionLogger.m in Sources */,
 				354F1A3E203D21D00013EDAC /* GTMStackTrace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +443,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ExceptionLogger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ExceptionLogger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -457,6 +466,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ExceptionLogger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ExceptionLogger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
