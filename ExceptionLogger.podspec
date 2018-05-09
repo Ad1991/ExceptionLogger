@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ExceptionLogger"
-  s.version      = "0.1.1"
+  s.version      = "1.0.0"
   s.summary      = "A lightweight exception logger for iOS applications"
   s.description  = <<-DESC
   A lightweight exception logger that automatically stores any crashlogs in user defaults and returns when asked for.
